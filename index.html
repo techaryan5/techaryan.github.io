@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechAryan Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login-screen">
+    <h2>Enter Username</h2>
+    <input type="text" id="username" placeholder="Your name">
+    <button onclick="joinChat()">Join Chat</button>
+  </div>
+
+  <div id="chat-screen" style="display: none;">
+    <h2>Welcome to Chat Room</h2>
+    <div id="messages"></div>
+    <div class="input-box">
+      <input type="text" id="messageInput" placeholder="Type a message...">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
